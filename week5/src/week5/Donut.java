@@ -1,0 +1,26 @@
+package week5;
+
+public class Donut {
+	int radius;
+	String name;
+	double getArea() {
+		double area;
+		area = 3.14 * radius * radius;
+		return area;
+	}
+	public static void main(String[] args) {
+		Donut pizza = new Donut();
+		
+		pizza.name = "자바피자";
+		pizza.radius = 5;
+		
+		System.out.println(pizza.name + " 면적 : " + pizza.getArea());
+		
+		Donut donut = new Donut();
+		
+		donut.name = "자바도넛";
+		donut.radius = 2;
+		
+		System.out.println(donut.name + " 면적 : " + donut.getArea());
+	}
+}
